@@ -23,7 +23,7 @@ NC               = "\033[0m"
 REPOSITORIES     = ["cvs-svc-defects",
                     "cvs-svc-stub-crm-atfs",
                     "cvs-svc-tech-records",
-                    "cvs-template"]
+                    "cvs-svc-template"]
 
 GIT              = "git@github.com:dvsa"
 
