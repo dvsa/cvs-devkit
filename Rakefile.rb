@@ -49,7 +49,7 @@ task :help do
   print "rake #{RED}branch#{NC}                    --  display current branch of all repos\n"
   print "rake #{RED}clone#{NC}                     --  run 'git clone' on all repos\n"
   print "rake #{RED}pull#{NC}                      --  run 'git pull --rebase' on all repos\n"
-  print "rake #{RED}create_branch \"BRANCH\"#{NC}    --  run 'git checkout -b BRANCH' on all repos\n"
+  print "rake #{RED}create_branch 'BRANCH'#{NC}    --  run 'git checkout -b \"BRANCH\"' on all repos\n"
   print "rake #{RED}checkout_master#{NC}           --  run 'git checkout master' on all repos\n"
   print "rake #{RED}checkout_develop#{NC}          --  run 'git checkout develop' on all repos\n"
 
