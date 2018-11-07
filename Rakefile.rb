@@ -191,14 +191,14 @@ end
 task :install do
     SERVICE.each { |service|
         if directory_exists? service
-            print "#{RED}ERROR#{NC} Repository #{YELLOW}#{service} #{NC}has already been cloned\n"
-        else
             dir = Dir.pwd + "/" + service
             Dir.chdir(dir) do
                 print "#{RED}Installing #{YELLOW}#{service} #{NC}"
                 sh "npm install"
                 print "#{GREEN}Done#{NC}\n"
             end
+        else
+            print "#{RED}ERROR#{NC} Node modules for #{YELLOW}#{service} #{NC}has already been installed\n"
         end
     }
 end
@@ -210,14 +210,14 @@ end
 task :start do
     SERVICE.each { |service|
         if directory_exists? service
-            print "#{RED}ERROR#{NC} Repository #{YELLOW}#{service} #{NC}has already been cloned\n"
-        else
             dir = Dir.pwd + "/" + service
             Dir.chdir(dir) do
                 print "#{RED}Starting #{YELLOW}#{service} #{NC}"
                 sh "npm start"
                 print "#{GREEN}Done#{NC}\n"
             end
+        else
+            print "#{RED}ERROR#{NC} #{YELLOW}#{service} #{NC}has already been started\n"
         end
     }
 end
