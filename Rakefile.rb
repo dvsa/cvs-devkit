@@ -25,6 +25,11 @@ REPOSITORIES     = ["cvs-svc-defects",
                     "cvs-svc-tech-records",
                     "cvs-svc-template"]
 
+SERVICE          = ["cvs-svc-defects",
+                    "cvs-svc-stub-crm-atfs",
+                    "cvs-svc-tech-records"]
+
+
 GIT              = "git@github.com:dvsa"
 
 #########################################################################################################
@@ -54,6 +59,9 @@ task :help do
   print "rake #{RED}checkout_develop#{NC}          --  run 'git checkout develop' on all repos\n"
 
   print "rake #{RED}needs_commit#{NC}              --  checks if any of the repos need a commit\n\n"
+
+  print "rake #{RED}install#{NC}                   --  run npm install in all repositories\n"
+  print "rake #{RED}start#{NC}                     --  run npm start in all repositories\n\n"
 
 end
 
@@ -174,6 +182,44 @@ task :needs_commit do
     if !hasChanged
       print "#{GREEN}No unstaged files#{NC}\n"
     end
+end
+
+###################
+# install
+###################
+
+task :install do
+    SERVICE.each { |service|
+        if directory_exists? service
+            dir = Dir.pwd + "/" + service
+            Dir.chdir(dir) do
+                print "#{RED}Installing #{YELLOW}#{service} #{NC}"
+                sh "npm install"
+                print "#{GREEN}Done#{NC}\n"
+            end
+        else
+            print "#{RED}ERROR#{NC} Node modules for #{YELLOW}#{service} #{NC}has already been installed\n"
+        end
+    }
+end
+
+###################
+# start
+###################
+
+task :start do
+    SERVICE.each { |service|
+        if directory_exists? service
+            dir = Dir.pwd + "/" + service
+            Dir.chdir(dir) do
+                print "#{RED}Starting #{YELLOW}#{service} #{NC}"
+                sh "npm start"
+                print "#{GREEN}Done#{NC}\n"
+            end
+        else
+            print "#{RED}ERROR#{NC} #{YELLOW}#{service} #{NC}has already been started\n"
+        end
+    }
 end
 
 #########################################################################################################
