@@ -23,16 +23,15 @@ NC               = "\033[0m"
 REPOSITORIES     = ["cvs-svc-defects",
                     "cvs-svc-stub-crm-atfs",
                     "cvs-svc-tech-records",
-                    "cvs-svc-template",
                     "cvs-svc-test-types",
-                    "cvs-svc-preparers-mock"]
+                    "cvs-svc-preparers-mock",
+                    "cvs-svc-template"]
 
 SERVICE          = ["cvs-svc-defects",
                     "cvs-svc-stub-crm-atfs",
                     "cvs-svc-tech-records",
                     "cvs-svc-test-types",
                     "cvs-svc-preparers-mock"]
-
 
 GIT              = "git@github.com:dvsa"
 
@@ -212,18 +211,28 @@ end
 ###################
 
 task :start do
+    Rake::Task["stop"].invoke()
     SERVICE.each { |service|
         if directory_exists? service
             dir = Dir.pwd + "/" + service
             Dir.chdir(dir) do
                 print "#{RED}Starting #{YELLOW}#{service} #{NC}"
-                sh "npm start"
+                sh "npm run start &"
                 print "#{GREEN}Done#{NC}\n"
             end
         else
             print "#{RED}ERROR#{NC} #{YELLOW}#{service} #{NC}has already been started\n"
         end
     }
+end
+
+###################
+# stop
+###################
+
+task :stop do
+     kill_port 3000
+     kill_port 8000
 end
 
 #########################################################################################################
@@ -280,4 +289,8 @@ end
 
 def check_branch_exist?(branch)
    system("git rev-parse --quiet --verify #{branch} > /dev/null")
+end
+
+def kill_port(port)
+    sh "lsof -i tcp:#{port} | awk 'NR!=1 {print $2}' | xargs kill || true"
 end
