@@ -21,14 +21,14 @@ BLUE             = "\033[1;34m"
 NC               = "\033[0m"
 
 REPOSITORIES     = ["cvs-svc-defects",
-                    "cvs-svc-stub-crm-atfs",
                     "cvs-svc-tech-records",
                     "cvs-svc-test-types",
                     "cvs-svc-preparers-mock",
-                    "cvs-svc-template"]
+                    "cvs-svc-template",
+                    "cvs-svc-stub-crm-test-stations"]
 
 SERVICE          = ["cvs-svc-defects",
-                    "cvs-svc-stub-crm-atfs",
+                    "cvs-svc-stub-crm-test-stations",
                     "cvs-svc-tech-records",
                     "cvs-svc-test-types",
                     "cvs-svc-preparers-mock"]
