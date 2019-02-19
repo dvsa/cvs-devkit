@@ -23,15 +23,15 @@ NC               = "\033[0m"
 REPOSITORIES     = ["cvs-svc-defects",
                     "cvs-svc-tech-records",
                     "cvs-svc-test-types",
-                    "cvs-svc-preparers-mock",
+                    "cvs-svc-preparers",
                     "cvs-svc-template",
-                    "cvs-svc-stub-crm-test-stations"]
+                    "cvs-svc-test-stations"]
 
 SERVICE          = ["cvs-svc-defects",
-                    "cvs-svc-stub-crm-test-stations",
+                    "cvs-svc-test-stations",
                     "cvs-svc-tech-records",
                     "cvs-svc-test-types",
-                    "cvs-svc-preparers-mock"]
+                    "cvs-svc-preparers"]
 
 GIT              = "git@github.com:dvsa"
 
