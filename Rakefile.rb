@@ -21,20 +21,22 @@ BLUE             = "\033[1;34m"
 NC               = "\033[0m"
 
 REPOSITORIES     = ["cvs-svc-defects",
-                    "cvs-svc-tech-records",
+                    "cvs-svc-test-stations",
+                    "cvs-svc-technical-records",
                     "cvs-svc-test-types",
                     "cvs-svc-preparers",
-                    "cvs-svc-template",
-                    "cvs-svc-test-stations"]
+                    "cvs-svc-test-results",
+                    "cvs-svc-activities"]
 
 SERVICE          = ["cvs-svc-defects",
                     "cvs-svc-test-stations",
-                    "cvs-svc-tech-records",
+                    "cvs-svc-technical-records",
                     "cvs-svc-test-types",
-                    "cvs-svc-preparers"]
+                    "cvs-svc-preparers",
+                    "cvs-svc-activities",
+                    "cvs-svc-test-results"]
 
-GIT              = "git@github.com:dvsa"
-
+  GIT              = "git@github.com:dvsa"
 #########################################################################################################
 # TASKS
 #########################################################################################################
@@ -231,10 +233,27 @@ end
 ###################
 
 task :stop do
-     kill_port 3000
-     kill_port 8000
-end
-
+    kill_port 3000
+    kill_port 3001
+    kill_port 3002
+    kill_port 3003
+    kill_port 3004
+    kill_port 3005
+    kill_port 3006
+    kill_port 3007
+    kill_port 3008
+    kill_port 3009
+    kill_port 8000
+    kill_port 8001
+    kill_port 8002
+    kill_port 8003
+    kill_port 8004
+    kill_port 8005
+    kill_port 8006
+    kill_port 8007
+    kill_port 8008
+    kill_port 8009
+    end
 #########################################################################################################
 # HELPERS
 #########################################################################################################

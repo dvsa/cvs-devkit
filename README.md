@@ -46,6 +46,7 @@ Please follow the rake documentation on how to install the package on your machi
 |rake needs_commit|--  checks if any of the repos need a commit|
 |rake install|--  run npm install in all repositories|
 |rake start|--  run npm run start in all repositories|
+|rake stop|--  kill all the ports used by all repositories|
 
 
 ## Testing
