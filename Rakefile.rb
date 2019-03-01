@@ -21,18 +21,22 @@ BLUE             = "\033[1;34m"
 NC               = "\033[0m"
 
 REPOSITORIES     = ["cvs-svc-defects",
-                    "cvs-svc-tech-records",
+                    "cvs-svc-test-stations",
+                    "cvs-svc-technical-records",
                     "cvs-svc-test-types",
                     "cvs-svc-preparers",
-                    "cvs-svc-template",
-                    "cvs-svc-test-stations"]
+                    "cvs-svc-test-results",
+                    "cvs-svc-test-number",
+                    "cvs-svc-activities"]
 
 SERVICE          = ["cvs-svc-defects",
                     "cvs-svc-test-stations",
-                    "cvs-svc-tech-records",
+                    "cvs-svc-technical-records",
                     "cvs-svc-test-types",
-                    "cvs-svc-preparers"]
-
+                    "cvs-svc-preparers",
+                    "cvs-svc-test-results",
+                    "cvs-svc-test-number",
+                    "cvs-svc-activities"]
 GIT              = "git@github.com:dvsa"
 
 #########################################################################################################
