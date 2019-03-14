@@ -26,17 +26,24 @@ REPOSITORIES     = ["cvs-svc-defects",
                     "cvs-svc-test-types",
                     "cvs-svc-preparers",
                     "cvs-svc-test-results",
+                    "cvs-svc-activities",
                     "cvs-svc-test-number",
-                    "cvs-svc-activities"]
+                    "cvs-tsk-cert-gen",
+                    "cvs-tsk-cert-gen-init",
+                    "cvs-svc-authoriser"]
 
 SERVICE          = ["cvs-svc-defects",
                     "cvs-svc-test-stations",
                     "cvs-svc-technical-records",
                     "cvs-svc-test-types",
                     "cvs-svc-preparers",
+                    "cvs-svc-activities",
                     "cvs-svc-test-results",
                     "cvs-svc-test-number",
-                    "cvs-svc-activities"]
+                    "cvs-tsk-cert-gen",
+                    "cvs-tsk-cert-gen-init",
+                    "cvs-svc-authoriser"]
+
 GIT              = "git@github.com:dvsa"
 
 #########################################################################################################
@@ -192,6 +199,22 @@ task :needs_commit do
 end
 
 ###################
+# revert changes
+###################
+
+task :revert do
+    REPOSITORIES.each { |repo|
+        if directory_exists? repo
+            print "#{RED}Reverting #{YELLOW}#{repo} #{NC}"
+            sh "cd #{repo} git reset --hard"
+            print "#{GREEN}Reverted\n"
+        else
+            print "#{RED}ERROR #{YELLOW}#{repo} #{NC}no revert was made\n"
+        end
+    }
+end
+
+###################
 # install
 ###################
 
@@ -235,8 +258,26 @@ end
 ###################
 
 task :stop do
-     kill_port 3000
+     kill_port 3000 
+     kill_port 3001
+     kill_port 3002
+     kill_port 3003 
+     kill_port 3004
+     kill_port 3005
+     kill_port 3006
+     kill_port 3007
+     kill_port 3008
+     kill_port 3009
      kill_port 8000
+     kill_port 8001
+     kill_port 8002
+     kill_port 8003
+     kill_port 8004
+     kill_port 8005
+     kill_port 8006
+     kill_port 8007
+     kill_port 8008
+     kill_port 8009
 end
 
 #########################################################################################################
