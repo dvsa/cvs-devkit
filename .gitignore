@@ -1,14 +1,41 @@
-# OS generated files  #
-#######################
 .DS_Store
-.DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
 
-# Ignore from project #
-#######################
-node_modules
+# Idea specific hidden files
+.idea/**
+
+# Node specific files
+node_modules/**
+
+# Lint ,  reports
+.reports/**
+
+# Serverless specific files
+.dynamodb/**
+
+# Config file generated based on environment
+src/config/config.json
+
+#coverage
+.nyc_output/**
+coverage/**
+
+#sonarqube
+.scannerwork/**
+report.json
+
+#Build directories
+.build/*
 node_modules/*
 package-lock.json
 /cvs-*/
+terraform.tfstate
+terraform.tfstate.backup
+idea/*
+
+.terraform/*
+.terraform/
+
+localstack/seed/seed/node_modules/*

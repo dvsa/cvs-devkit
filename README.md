@@ -62,8 +62,25 @@ In order to test, you need to run the following:
 
 Bug reports and pull requests are welcome on GitHub.
 
+
+## Localstack
+
+#### Prerequisites
+0. Clear your env from any previous version of Python that is not your system version
+1. Got to https://www.python.org/downloads/release/ and download the latest version of python
+2. Proceed with the installation
+3. Open terminal and run `python3.9 -V` which should return the newly installed version
+4. Upgrade pip by running `python3.9 -m pip install pip --upgrade`
+5. Install Pipenv by running `python3.9 -m pip install pipenv`
+6. Verify Pipenv `pipenv`
+7. Install the following
+
+
+#### Create Localstack virtual environment
+0. Make sure you are running docker locally
+1. Navigate into the `./localstack` directory and initialize the environment by running ./init_localstack.sh
+
+
 ## License
 
 This tool kit is available as open source under the terms of the [MIT](https://opensource.org/licenses/MIT).
-
-

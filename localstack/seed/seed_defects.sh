@@ -1,0 +1,1 @@
+./seed/seed.js 'cvs-localstack-defects' '../../../cvs-svc-defects/tests/resources/defects.json'
