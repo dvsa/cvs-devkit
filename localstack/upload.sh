@@ -11,6 +11,9 @@ SERVICES=(
   'cvs-svc-test-types'
   'cvs-svc-test-number'
   'cvs-svc-test-results'
+  'cvs-svc-technical-records'
+  'cvs-tsk-cert-gen-init'
+  'cvs-tsk-cert-gen'
 )
 
 Help()

@@ -105,3 +105,10 @@ resource aws_lambda_permission test-results {
   principal     = "apigateway.amazonaws.com"
   source_arn    = "arn:aws:execute-api:eu-west-1:000000000000:${module.api.apigw_id}/*/*/*"
 }
+
+resource aws_lambda_event_source_mapping cert_gen_init {
+  batch_size        = 10
+  event_source_arn  = module.test_results_dynamo.stream_arn
+  function_name     = module.cert_gen_init_lambda.arn
+  starting_position = "LATEST"
+}

@@ -5,3 +5,4 @@
 ./seed_test_results.sh
 ./seed_test_stations.sh
 ./seed_test_types.sh
+./seed_tech_records.sh

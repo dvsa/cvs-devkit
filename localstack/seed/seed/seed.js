@@ -15,12 +15,10 @@ const dbClient = new AWS.DynamoDB.DocumentClient({
 const tableName = process.argv[2];
 console.log(tableName)
 const resourceLocation = process.argv[3];
-console.log(resourceLocation)
-console.log(dbClient)
+
 // Loading resource and splitting it into batches
 const resource = JSON.parse(fs.readFileSync(path.resolve(__dirname, resourceLocation)));
 
-console.log(resource)
 let batches = [];
 
 while (resource.length > 0)

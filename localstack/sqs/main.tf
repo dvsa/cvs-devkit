@@ -1,5 +1,6 @@
 resource aws_sqs_queue queue {
-  name = "${local.name_prefix}-queue"
+
+  name = var.service_name
 
   visibility_timeout_seconds = var.visibility_timeout_seconds
   message_retention_seconds  = var.message_retention_seconds
@@ -14,19 +15,9 @@ resource aws_sqs_queue queue {
 
   fifo_queue                  = var.fifo_queue
   content_based_deduplication = var.content_based_deduplication
-
-  tags = {
-    Name        = "${local.name_prefix}-queue"
-    Environment = terraform.workspace
-  }
 }
 
 resource aws_sqs_queue dlq {
-  name                      = "${local.name_prefix}-dlq"
+  name                      = "${var.service_name}-dlq"
   message_retention_seconds = var.message_retention_seconds
-
-  tags = {
-    Name        = "${local.name_prefix}-dlq"
-    Environment = terraform.workspace
-  }
 }
