@@ -9,7 +9,7 @@ locals {
     repo           = "cvs-svc-test-number",
     runtime        = "nodejs14.x"
     timeout        = 30,
-    memory         = 128
+    memory         = 256
     hash_key    = "testNumberKey"
     hash_type   = "N"
   }

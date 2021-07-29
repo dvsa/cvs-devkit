@@ -8,8 +8,8 @@ locals {
     description    = "cvs-svc-test-results"
     repo           = "cvs-svc-test-results"
     runtime        = "nodejs14.x"
-    timeout        = 30
-    memory         = 128
+    timeout        = 60
+    memory         = 512
     hash_key       = "vin"
     hash_type      = "S"
     range_key      = "testResultId"

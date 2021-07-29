@@ -8,7 +8,7 @@ locals {
     description    = "cvs-svc-test-types",
     repo           = "cvs-svc-test-types",
     runtime        = "nodejs14.x"
-    memory         = 128,
+    memory         = 256,
     timeout        = 30,
     range_key   = "name"
     range_type  = "S"
