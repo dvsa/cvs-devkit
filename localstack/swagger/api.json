@@ -64,6 +64,12 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "body object",
+            "required": true
           }
         ],
         "requestBody": {
@@ -1271,6 +1277,14 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "item",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1608,6 +1622,7 @@
             }
           },
           "requestParameters": {
+            "integration.request.path.object": "method.request.path.item",
             "integration.request.header.Accept": "method.request.header.Accept"
           },
           "passthroughBehavior": "when_no_match",
@@ -1621,6 +1636,14 @@
           {
             "name": "Content-Type",
             "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "item",
+            "in": "path",
             "required": true,
             "schema": {
               "type": "string"
@@ -1965,6 +1988,7 @@
             }
           },
           "requestParameters": {
+            "integration.request.path.object": "method.request.path.item",
             "integration.request.header.Content-Type": "method.request.header.Content-Type"
           },
           "passthroughBehavior": "when_no_match",
