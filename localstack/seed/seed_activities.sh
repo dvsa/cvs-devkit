@@ -1,0 +1,1 @@
+./seed/seed.js 'cvs-localstack-activities' '../../../cvs-svc-activities/tests/resources/activities.json'

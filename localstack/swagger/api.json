@@ -5,6 +5,227 @@
     "version": "1.0.0"
   },
   "paths": {
+    "/activities": {
+      "options": {
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Access-Control-Allow-Methods": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Access-Control-Allow-Headers": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empty"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Methods": "'DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
+                "method.response.header.Access-Control-Allow-Origin": "'*'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\":200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "timeoutInMillis": 29000,
+          "type": "mock"
+        }
+      },
+      "post": {
+        "parameters": [
+          {
+            "name": "Authorisation",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Activities"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empty"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Lambda-Auth": []
+          }
+        ],
+        "x-amazon-apigateway-integration": {
+          "uri": "arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:000000000000:function:cvs-localstack-activities/invocations",
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "timeoutInMillis": 29000,
+          "type": "aws_proxy"
+        }
+      }
+    },
+    "/activities/{proxy+}": {
+      "options": {
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Access-Control-Allow-Methods": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Access-Control-Allow-Headers": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empty"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Methods": "'DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
+                "method.response.header.Access-Control-Allow-Origin": "'*'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\":200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "timeoutInMillis": 29000,
+          "type": "mock"
+        }
+      },
+      "get": {
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empty"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Lambda-Auth": []
+          }
+        ],
+        "x-amazon-apigateway-integration": {
+          "uri": "arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:000000000000:function:cvs-localstack-activities/invocations",
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "timeoutInMillis": 29000,
+          "type": "aws_proxy"
+        }
+      },
+      "put": {
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empty"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Lambda-Auth": []
+          }
+        ],
+        "x-amazon-apigateway-integration": {
+          "uri": "arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:000000000000:function:cvs-localstack-activities/invocations",
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "timeoutInMillis": 29000,
+          "type": "aws_proxy"
+        }
+      }
+    },
     "/defects": {
       "options": {
         "responses": {
@@ -55,7 +276,7 @@
           "type": "mock"
         }
       },
-      "GET": {
+      "get": {
         "responses": {
           "200": {
             "description": "200 response",
@@ -77,7 +298,7 @@
         },
         "security": [
           {
-            "Lambda-Auth": []
+            "lambda-auth": []
           }
         ],
         "x-amazon-apigateway-integration": {
@@ -139,7 +360,7 @@
           "type": "mock"
         }
       },
-      "GET": {
+      "get": {
         "responses": {
           "200": {
             "description": "200 response",
@@ -161,7 +382,7 @@
         },
         "security": [
           {
-            "Lambda-Auth": []
+            "lambda-auth": []
           }
         ],
         "x-amazon-apigateway-integration": {
@@ -223,7 +444,7 @@
           "type": "mock"
         }
       },
-      "x-amazon-apigateway-any-method": {
+      "get": {
         "responses": {
           "200": {
             "description": "200 response",
@@ -245,7 +466,7 @@
         },
         "security": [
           {
-            "Lambda-Auth": []
+            "lambda-auth": []
           }
         ],
         "x-amazon-apigateway-integration": {
@@ -307,7 +528,7 @@
         "type": "mock"
       }
     },
-    "x-amazon-apigateway-any-method": {
+    "get": {
       "responses": {
         "200": {
           "description": "200 response",
@@ -329,7 +550,7 @@
       },
       "security": [
         {
-          "Lambda-Auth": []
+          "lambda-auth": []
         }
       ],
       "x-amazon-apigateway-integration": {
@@ -391,7 +612,7 @@
           "type": "mock"
         }
       },
-      "x-amazon-apigateway-any-method": {
+      "get": {
         "responses": {
           "200": {
             "description": "200 response",
@@ -413,7 +634,7 @@
         },
         "security": [
           {
-            "Lambda-Auth": []
+            "lambda-auth": []
           }
         ],
         "x-amazon-apigateway-integration": {
@@ -475,7 +696,7 @@
           "type": "mock"
         }
       },
-      "x-amazon-apigateway-any-method": {
+      "get": {
         "responses": {
           "200": {
             "description": "200 response",
@@ -497,7 +718,7 @@
         },
         "security": [
           {
-            "Lambda-Auth": []
+            "lambda-auth": []
           }
         ],
         "x-amazon-apigateway-integration": {
@@ -559,7 +780,7 @@
           "type": "mock"
         }
       },
-      "x-amazon-apigateway-any-method": {
+      "get": {
         "responses": {
           "200": {
             "description": "200 response",
@@ -581,7 +802,7 @@
         },
         "security": [
           {
-            "Lambda-Auth": []
+            "lambda-auth": []
           }
         ],
         "x-amazon-apigateway-integration": {
@@ -643,7 +864,7 @@
           "type": "mock"
         }
       },
-      "x-amazon-apigateway-any-method": {
+      "get": {
         "responses": {
           "200": {
             "description": "200 response",
@@ -665,7 +886,7 @@
         },
         "security": [
           {
-            "Lambda-Auth": []
+            "lambda-auth": []
           }
         ],
         "x-amazon-apigateway-integration": {
@@ -727,7 +948,7 @@
           "type": "mock"
         }
       },
-      "x-amazon-apigateway-any-method": {
+      "get": {
         "responses": {
           "200": {
             "description": "200 response",
@@ -749,7 +970,7 @@
         },
         "security": [
           {
-            "Lambda-Auth": []
+            "lambda-auth": []
           }
         ],
         "x-amazon-apigateway-integration": {
@@ -811,7 +1032,7 @@
           "type": "mock"
         }
       },
-      "x-amazon-apigateway-any-method": {
+      "get": {
         "responses": {
           "200": {
             "description": "200 response",
@@ -1099,7 +1320,7 @@
         },
         "security": [
           {
-            "Lambda-Auth": []
+            "lambda-auth": []
           }
         ],
         "x-amazon-apigateway-integration": {
@@ -1453,7 +1674,7 @@
         },
         "security": [
           {
-            "Lambda-Auth": []
+            "lambda-auth": []
           }
         ],
         "x-amazon-apigateway-integration": {
@@ -1610,15 +1831,6 @@
   },
   "components": {
     "parameters": {
-      "correlationId": {
-        "in": "header",
-        "name": "X-Amzn-Trace-Id",
-        "required": true,
-        "schema": {
-          "type": "string"
-        },
-        "description": "is a unique identifier value that is attached to requests and messages that allow reference to a particular transaction or event chain"
-      },
       "apiKey": {
         "in": "header",
         "name": "x-api-key",
@@ -1627,15 +1839,6 @@
           "type": "string"
         },
         "description": "Simple server-server API Authentication"
-      },
-      "OAuth-ClientCredentials": {
-        "in": "header",
-        "name": "Authorisation",
-        "required": true,
-        "schema": {
-          "type": "string"
-        },
-        "description": "Valid DVSA Issued JWT"
       }
     },
     "schemas": {
@@ -1643,78 +1846,60 @@
         "title": "Empty Schema",
         "type": "object"
       },
-      "Defect": {
+      "Activities": {
         "type": "object",
+        "required": [
+          "activityType",
+          "testStationName",
+          "testStationPNumber",
+          "testStationEmail",
+          "testerEmail",
+          "testStationType",
+          "testerName",
+          "testerStaffId",
+          "startTime",
+          "endTime",
+          "waitReason"
+        ],
         "properties": {
-          "imNumber": {
-            "type": "integer"
-          },
-          "imDescription": {
+          "activityType": {
             "type": "string"
           },
-          "itemNumber": {
-            "type": "integer"
-          },
-          "itemDescription": {
+          "testStationName": {
             "type": "string"
           },
-          "deficiencyRef": {
+          "testStationPNumber": {
             "type": "string"
           },
-          "deficiencyId": {
+          "testStationEmail": {
             "type": "string"
           },
-          "deficiencySubId": {
+          "testerEmail": {
             "type": "string"
           },
-          "deficiencyCategory": {
+          "testStationType": {
             "type": "string"
           },
-          "deficiencyText": {
+          "testerName": {
             "type": "string"
           },
-          "stdForProhibition": {
-            "type": "boolean"
-          }
-        }
-      },
-      "TestDefect": {
-        "type": "object",
-        "properties": {
-          "defect": {
-            "$ref": "#/components/schemas/Defect"
-          },
-          "location": {
-            "$ref": "#/components/schemas/Location"
-          },
-          "notes": {
+          "testerStaffId": {
             "type": "string"
           },
-          "prs": {
-            "type": "boolean"
-          },
-          "prohibitionIssued": {
-            "type": "integer"
-          }
-        }
-      },
-      "CustomDefect": {
-        "type": "object",
-        "properties": {
-          "referenceNumber": {
+          "startTime": {
             "type": "string"
           },
-          "defectName": {
+          "endTime": {
             "type": "string"
           },
-          "defectNotes": {
+          "waitReason": {
             "type": "string"
           }
         }
       }
     },
     "securitySchemes": {
-      "Lambda-Auth": {
+      "lambda-auth": {
         "type": "apiKey",
         "name": "Authorization",
         "in": "header",
@@ -1754,8 +1939,5 @@
         "application/json": "{\"message\":$context.error.messageString}"
       }
     }
-  },
-  "x-amazon-apigateway-binary-media-types": [
-    "application/octet-stream"
-  ]
+  }
 }

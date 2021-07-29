@@ -4,8 +4,8 @@ resource aws_dynamodb_table db {
   billing_mode     = "PAY_PER_REQUEST"
   hash_key         = var.hash.key
   range_key        = var.range.key
-  stream_enabled   = false
-  stream_view_type = null
+  stream_enabled   = var.stream_enabled
+  stream_view_type = var.stream_enabled ? "NEW_AND_OLD_IMAGES" : null
 
   dynamic attribute {
     for_each = local.attributes

@@ -14,7 +14,7 @@ services:
       - "127.0.0.1:4571:4571"
       - "127.0.0.1:${PORT_WEB_UI-9000}:${PORT_WEB_UI-9000}"
     environment:
-      - SERVICES=iam, lambda, dynamodb, apigateway, s3, sns, cloudwatch, cloudwatchlogs
+      - SERVICES=iam, lambda, dynamodb, dynamodbstreams, apigateway, s3, s3api, sns, sqs, sts, cloudwatch, cloudwatchlogs, apigatewaymanagementapi, apigatewayv2, cloudfront, kinesis, eventbridge, xray
       - DEBUG=1
       - DEFAULT_REGION=eu-west-1
       - PORT_WEB_UI=9000

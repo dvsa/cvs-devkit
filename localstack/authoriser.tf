@@ -8,7 +8,7 @@ locals {
     description    = "cvs-svc-authoriser",
     repo           = "cvs-svc-authoriser",
     runtime        = "nodejs14.x"
-    memory         = 512,
+    memory         = 128,
     timeout        = 30,
     hash_key       = "id"
     hash_type      = "N"
