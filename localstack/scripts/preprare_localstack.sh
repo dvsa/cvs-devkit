@@ -23,10 +23,10 @@ Bootstrap()
 {
   echo "Setting zip files"
   ./upload_all.sh -b
-  cd terraform
+  cd ../terraform
   terraform init
   terraform apply -auto-approve
-  cd ..
+  cd ../scripts
   ./upload_reference_data.sh
   ./seed_all.sh
   ./upload_signature.sh
