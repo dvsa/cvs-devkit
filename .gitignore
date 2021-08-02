@@ -39,5 +39,5 @@ idea/*
 .terraform/
 
 localstack/scripts/seed/node_modules/*
-localstack/certificates/*
+localstack/scripts/certificates/*
 localstack/reference-data/*
