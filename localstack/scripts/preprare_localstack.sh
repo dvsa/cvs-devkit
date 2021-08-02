@@ -28,6 +28,9 @@ Bootstrap()
   terraform apply -auto-approve
   cd ../scripts
   ./upload_reference_data.sh
+  cd seed
+  npm install
+  cd ..
   ./seed_all.sh
   ./upload_signature.sh
   ./get_api_id.sh
