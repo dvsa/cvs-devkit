@@ -19,7 +19,6 @@ module cert_gen_init_lambda {
   lambda_exec_role_arn   = module.iam.lambda_exec_role_arn
   additional_env_vars = {
     BRANCH = "localstack"
-    ENDPOINT = "sqs.eu-west-1.amazonaws.com"
   }
 }
 

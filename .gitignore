@@ -39,3 +39,5 @@ idea/*
 .terraform/
 
 localstack/seed/seed/node_modules/*
+
+localstack/certificates/*

@@ -12,6 +12,7 @@ SERVICES=(
   'cvs-svc-test-number'
   'cvs-svc-test-results'
   'cvs-svc-technical-records'
+  'cvs-svc-doc-gen'
   'cvs-tsk-cert-gen-init'
   'cvs-tsk-cert-gen'
 )
