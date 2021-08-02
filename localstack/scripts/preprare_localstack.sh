@@ -17,6 +17,27 @@ Check()
      echo "Localstack is down."
      exit 1
   fi
+  if ! command -v terraform --version &> /dev/null
+  then
+    echo "terraform could not be found"
+    exit
+  fi
+
+  if ! command -v npm --version &> /dev/null
+    then
+      echo "node could not be found"
+      exit
+  fi
+  if ! command -v awslogs --version &> /dev/null
+    then
+      echo "awslogs could not be found"
+      exit
+  fi
+  if ! command -v aws --version &> /dev/null
+    then
+      echo "aws could not be found"
+      exit
+  fi
 }
 
 Bootstrap()
