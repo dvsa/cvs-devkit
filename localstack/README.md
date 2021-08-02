@@ -13,8 +13,9 @@ The following steps have been tested on macOS Catalina 10.15.7 only
 2. Make sure you have brew installed. [Download the latest version here](https://brew.sh/)
 3. Make sure terraform 13 or higher  [Download the latest version here](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 4. Make sure you have the awscli v2 installed [Download the latest version here](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html)
-5. Open docker preferences and under resources, file sharing make sure you have `/private` in the resources list.
-6. This version of localstack requires an API key. You will need to create a subscription on https://app.localstack.cloud/  to be able to test use these script. The subscription needs to be exported prior to running the docker-compose up script. `export LOCAL_API_KEY=xxxxxxxxx`
+5. Make sure you have awslogs installed [Download the latest version here](https://github.com/jorgebastida/awslogs)
+6. Open docker preferences and under resources, file sharing make sure you have `/private` in the resources list.
+7. This version of localstack requires an API key. You will need to create a subscription on https://app.localstack.cloud/  to be able to test use these script. The subscription needs to be exported prior to running the docker-compose up script. `export LOCAL_API_KEY=xxxxxxxxx`
 
 #### Create Localstack virtual environment
 0. The recommendation is to close as many applications as possible as this process requires quite a bit of computational power
