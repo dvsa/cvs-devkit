@@ -24,7 +24,7 @@ The following steps have been tested on macOS Catalina 10.15.7 only
 4. Upload the latest zip files into localstack by running `./upload_all.sh -b` in the same directory. Wait until this process finish
 5. Now change directory and go to the terraform folder and run `terraform init`
 6. If the step was successful run `terraform apply` and confirm the creation of the localstack infrastructure.
-7. Once the script finish you can go back into the scripts folder and run the seed services script `./seed_all.sh`
+7. Once the script finish you can go back into the scripts folder and run `npm install` in the seed folder. Go up a folder and seed all services by running `./seed_all.sh`
 8. Upload a sample signature document into the signature bucket by running the `./upload-signature.sh`
 9. You can now import the postman collection from the postman folder which will provide all necessary scripts required to run the services.
 10. Using the test results payloads you can generate a certificate. The certificate will be generated in the cvs-cert-localstack bucket

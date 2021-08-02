@@ -38,6 +38,6 @@ idea/*
 .terraform/*
 .terraform/
 
-localstack/scripts/seed/seed/node_modules/*
+localstack/scripts/seed/node_modules/*
 localstack/certificates/*
-localstack/reference-data/data/*
+localstack/reference-data/*

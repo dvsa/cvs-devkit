@@ -8,11 +8,14 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2018-02-13",
+    "testerEmail": "tester@dvsa.gov.uk",
+    "startTime": "2018-02-13T04:00:40.561Z",
+    "activityDay": "2018-02-13",
     "endTime": null
   },
   {
     "id": "5e4bd304-446e-4678-8289-d34fca925612",
+    "parentId": "5e4bd304-446e-4678-8289-d34fca9256e9",
     "activityType": "wait",
     "testStationName": "Rowe, Wunsch and Wisoky",
     "testStationPNumber": "87-1369562",
@@ -20,9 +23,15 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2017-02-13",
-    "endTime": null
-  },{
+    "startTime": "2017-02-13T04:00:40.561Z",
+    "activityDay": "2017-02-13",
+    "endTime": null,
+    "waitReason": [
+      "Admin"
+    ],
+    "notes": null
+  },
+  {
     "id": "5e4bd304-446e-4678-8289-d34fca9256e8",
     "activityType": "visit",
     "testStationName": "Rowe, Wunsch and Wisoky",
@@ -31,7 +40,9 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2016-02-13",
+    "testerEmail": "tester@dvsa.gov.uk",
+    "startTime": "2016-02-13T04:00:40.561Z",
+    "activityDay": "2016-02-13",
     "endTime": null
   },
   {
@@ -43,10 +54,10 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2015-02-13",
+    "testerEmail": "tester@dvsa.gov.uk",
+    "startTime": "2015-02-13T10:00:40.561Z",
     "endTime": null
-  }
-  ,
+  },
   {
     "id": "5e4bd304-446e-4678-8289-d34fca9256ee",
     "activityType": "visit",
@@ -56,10 +67,11 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2015-02-13",
+    "testerEmail": "tester@dvsa.gov.uk",
+    "startTime": "2015-02-13T10:00:40.561Z",
+    "activityDay": "2015-02-13",
     "endTime": null
-  }
-  ,
+  },
   {
     "id": "5e4bd304-446e-4678-8289-d34fca9256ef",
     "activityType": "visit",
@@ -69,10 +81,11 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2015-02-13",
+    "testerEmail": "tester@dvsa.gov.uk",
+    "startTime": "2015-02-13T10:00:40.561Z",
+    "activityDay": "2015-02-13",
     "endTime": null
-  }
-  ,
+  },
   {
     "id": "5e4bd304-446e-4678-8289-d34fcaasd56e4",
     "activityType": "visit",
@@ -82,10 +95,11 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2015-02-13",
+    "testerEmail": "tester@dvsa.gov.uk",
+    "startTime": "2015-02-13T10:00:40.561Z",
+    "activityDay": "2015-02-13",
     "endTime": null
-  }
-  ,
+  },
   {
     "id": "5e4bd304-446e-4618-8289-d34fca9256e4",
     "activityType": "visit",
@@ -95,7 +109,9 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2015-02-13",
+    "testerEmail": "tester@dvsa.gov.uk",
+    "startTime": "2015-02-13T10:00:40.561Z",
+    "activityDay": "2015-02-13",
     "endTime": null
   },
   {
@@ -107,7 +123,9 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2015-02-13",
+    "testerEmail": "tester@dvsa.gov.uk",
+    "startTime": "2015-02-13T10:00:40.561Z",
+    "activityDay": "2015-02-13",
     "endTime": null
   },
   {
@@ -119,7 +137,9 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2015-02-13",
+    "testerEmail": "tester@dvsa.gov.uk",
+    "startTime": "2015-02-13T10:00:40.561Z",
+    "activityDay": "2015-02-13",
     "endTime": null
   },
   {
@@ -131,19 +151,25 @@
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2015-02-13",
+    "testerEmail": "tester@dvsa.gov.uk",
+    "startTime": "2015-02-13T10:00:40.561Z",
+    "activityDay": "2015-02-13",
     "endTime": null
   },
   {
-    "id": "6e4b9304-446e-4678-8289-d34fca9256e4",
-    "activityType": "visit",
+    "id": "9e4b9304-446e-4678-8289-d34fca9259e4",
+    "parentId": "6e4bd304-446e-4678-8289-d34fca9256e4",
+    "activityType": "unaccountable time",
     "testStationName": "Rowe, Wunsch and Wisoky",
     "testStationPNumber": "87-1369564",
     "testStationEmail": "teststationname@dvsa.gov.uk",
     "testStationType": "gvts",
     "testerName": "Gica",
     "testerStaffId": "132",
-    "startTime": "2015-02-13",
-    "endTime": null
+    "startTime": "2015-02-13T10:00:40.561Z",
+    "activityDay": "2015-02-13",
+    "endTime": "2015-02-13",
+    "waitReason": [],
+    "notes": null
   }
 ]

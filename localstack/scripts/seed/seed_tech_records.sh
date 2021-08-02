@@ -1,1 +1,0 @@
-./seed/seed.js 'cvs-localstack-technical-records' '../../../cvs-svc-technical-records/tests/resources/technical-records.json'

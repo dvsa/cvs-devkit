@@ -23,8 +23,8 @@ Help()
 Update()
 {
   for service in "${SERVICES[@]}"; do
-
-    curl https://github.com/dvsa/cvs-svc-$service/blob/develop/tests/resources/$service.json > ./reference-data/$service
+    echo "Downloading reference data for $service"
+    curl -s https://raw.githubusercontent.com/dvsa/cvs-svc-$service/develop/tests/resources/$service.json > ./reference-data/$service.json
   done
 }
 
