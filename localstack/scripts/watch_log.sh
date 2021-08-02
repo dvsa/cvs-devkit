@@ -14,7 +14,7 @@ Banner()
 Watch()
 {
     echo "Opening cloudwatch log group for : $1 ................"
-    awslogs get /aws/lambda/cvs-localstack-$1  ALL --watch  --region eu-west-1 --aws-endpoint-url=http://localhost:4566
+    awslogs get /aws/lambda/cvs-localstack-$1  ALL --watch  --aws-region eu-west-1 --aws-endpoint-url=http://localhost:4566
 }
 
 while getopts ":k" option; do
