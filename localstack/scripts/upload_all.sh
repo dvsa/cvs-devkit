@@ -36,12 +36,12 @@ Bootstrap()
 Upload()
 {
   for service in "${SERVICES[@]}"; do
-    LOCAL_SHA=(`openssl dgst -sha256 -binary ../$service/localstack.zip | openssl enc -base64`)
-    REMOTE_SHA=(`AWS_PAGER= aws s3api head-object --bucket 'cvs-services' --key $service/latest.zip --region eu-west-1 --endpoint=http://localhost:4566 --query Metadata.sha --output text 2> /dev/null`)
+    LOCAL_SHA=(`openssl dgst -sha256 -binary ../zips/$service/localstack.zip | openssl enc -base64`)
+    REMOTE_SHA=(`AWS_PAGER= aws s3api head-object --bucket 'cvs-services' --key ../zips/$service/latest.zip --region eu-west-1 --endpoint=http://localhost:4566 --query Metadata.sha --output text 2> /dev/null`)
     if [[ "$LOCAL_SHA" == "$REMOTE_SHA" ]]; then
         echo "Service zip file for $service is already deployed to its latest version"
     else
-        aws s3 cp ../$service/localstack.zip s3://cvs-services/$service/latest.zip --metadata "sha=$LOCAL_SHA" --region eu-west-1 --endpoint=http://localhost:4566
+        aws s3 cp ../zips/$service/localstack.zip s3://cvs-services/$service/latest.zip --metadata "sha=$LOCAL_SHA" --region eu-west-1 --endpoint=http://localhost:4566
     fi
   done
 }

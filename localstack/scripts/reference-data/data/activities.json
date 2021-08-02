@@ -1,0 +1,149 @@
+[
+  {
+    "id": "5e4bd304-446e-4678-8289-d34fca9256e9",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369561",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2018-02-13",
+    "endTime": null
+  },
+  {
+    "id": "5e4bd304-446e-4678-8289-d34fca925612",
+    "activityType": "wait",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369562",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2017-02-13",
+    "endTime": null
+  },{
+    "id": "5e4bd304-446e-4678-8289-d34fca9256e8",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369563",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2016-02-13",
+    "endTime": null
+  },
+  {
+    "id": "5e4bd304-446e-4678-8289-d34fca9256e4",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369564",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2015-02-13",
+    "endTime": null
+  }
+  ,
+  {
+    "id": "5e4bd304-446e-4678-8289-d34fca9256ee",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369564",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2015-02-13",
+    "endTime": null
+  }
+  ,
+  {
+    "id": "5e4bd304-446e-4678-8289-d34fca9256ef",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369564",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2015-02-13",
+    "endTime": null
+  }
+  ,
+  {
+    "id": "5e4bd304-446e-4678-8289-d34fcaasd56e4",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369564",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2015-02-13",
+    "endTime": null
+  }
+  ,
+  {
+    "id": "5e4bd304-446e-4618-8289-d34fca9256e4",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369564",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2015-02-13",
+    "endTime": null
+  },
+  {
+    "id": "5e4bb304-446e-4678-8289-d34fca9256e4",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369564",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2015-02-13",
+    "endTime": null
+  },
+  {
+    "id": "5r4bd304-446e-4678-8289-d34fca9256e4",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369564",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2015-02-13",
+    "endTime": null
+  },
+  {
+    "id": "6e4bd304-446e-4678-8289-d34fca9256e4",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369564",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2015-02-13",
+    "endTime": null
+  },
+  {
+    "id": "6e4b9304-446e-4678-8289-d34fca9256e4",
+    "activityType": "visit",
+    "testStationName": "Rowe, Wunsch and Wisoky",
+    "testStationPNumber": "87-1369564",
+    "testStationEmail": "teststationname@dvsa.gov.uk",
+    "testStationType": "gvts",
+    "testerName": "Gica",
+    "testerStaffId": "132",
+    "startTime": "2015-02-13",
+    "endTime": null
+  }
+]

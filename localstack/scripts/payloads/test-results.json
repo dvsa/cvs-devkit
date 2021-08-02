@@ -1,0 +1,68 @@
+{
+  "testResultId": "909485dc-8d79-4786-ae0d-7e6141f7c73e",
+  "countryOfRegistration": "bg",
+  "createdById": "5c4ed163-e54b-400f-ab9a-9d75c658c131",
+  "createdByName": "test@test.com",
+  "euVehicleCategory": "n2",
+  "noOfAxles": 3,
+  "numberOfSeats": 53,
+  "numberOfWheelsDriven": 4,
+  "odometerReading": 55000,
+  "odometerReadingUnits": "kilometres",
+  "preparerId": "BL5545",
+  "preparerName": "Durrell Vehicles Limited",
+  "reasonForCancellation": null,
+  "reasonForCreation": "Test conducted",
+  "systemNumber": "11000002",
+  "testEndTimestamp": "2021-07-29T23:43:47.466Z",
+  "testerEmailAddress": "test@test.com",
+  "testerName": "test@test.com",
+  "testerStaffId": "5c4ed163-e54b-400f-ab9a-9d75c658c131",
+  "testStartTimestamp": "2021-07-29T23:28:47.466Z",
+  "testStationName": "Abshire-Kub",
+  "testStationPNumber": "09-4129632",
+  "testStationType": "gvts",
+  "testStatus": "submitted",
+  "testTypes": [
+    {
+      "additionalCommentsForAbandon": null,
+      "additionalNotesRecorded": null,
+      "certificateNumber": "W01B43142",
+      "customDefects": [
+
+      ],
+      "defects": [
+
+      ],
+      "emissionStandard": null,
+      "fuelType": null,
+      "lastSeatbeltInstallationCheckDate": null,
+      "modificationTypeUsed": null,
+      "modType": null,
+      "name": "Annual test",
+      "numberOfSeatbeltsFitted": null,
+      "particulateTrapFitted": null,
+      "particulateTrapSerialNumber": null,
+      "prohibitionIssued": false,
+      "reasonForAbandoning": null,
+      "seatbeltInstallationCheckDate": null,
+      "secondaryCertificateNumber": "21323",
+      "smokeTestKLimitApplied": null,
+      "testExpiryDate": "2022-07-28T00:00:00.000Z",
+      "testResult": "pass",
+      "testTypeEndTimestamp": "2021-07-29T23:38:47.466Z",
+      "testTypeId": "1",
+      "testTypeName": "Annual test",
+      "testTypeStartTimestamp": "2021-07-29T23:33:47.466Z"
+    }
+  ],
+  "vehicleClass": {
+    "code": "l",
+    "description": "large psv(ie: greater than 23 seats)"
+  },
+  "vehicleConfiguration": "rigid",
+  "vehicleSize": "small",
+  "vehicleType": "psv",
+  "vin": "1B7GG36N12S678410",
+  "vrm": "C47WLL"
+}
