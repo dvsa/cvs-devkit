@@ -23,11 +23,11 @@ The following steps have been tested on macOS Catalina 10.15.7 only
 2. Export the localstack PRO api key by running `export LOCALSTACK_API_KEY=xxxxxxxxx`
 3. Run the following command `docker-compose up` and wait until the container is up and running
 
-<a href="https://asciinema.org/a/BiiNAnwOzmVtX2JN8N8hi3f2Z?t=2" target="_blank"><img src="https://asciinema.org/a/BiiNAnwOzmVtX2JN8N8hi3f2Z.svg" width="750" /></a>
+<script id="asciicast-BiiNAnwOzmVtX2JN8N8hi3f2Z" src="https://asciinema.org/a/BiiNAnwOzmVtX2JN8N8hi3f2Z.js" async></script>
 
 4. In a different terminal navigate into the scrip folder and run the `./prepare_localstack.sh` script
 
-<a href="https://asciinema.org/a/UvjpRkP25hk5skGWdg4dCxRFj?t=2" target="_blank"><img src="https://asciinema.org/a/UvjpRkP25hk5skGWdg4dCxRFj.svg" width="750"/></a>
+<script id="asciicast-UvjpRkP25hk5skGWdg4dCxRFj" src="https://asciinema.org/a/UvjpRkP25hk5skGWdg4dCxRFj.js" async></script>
 
 #### Create Localstack virtual environment for the geeks
 0. The recommendation is to close as many applications as possible as this process requires quite a bit of computational power
