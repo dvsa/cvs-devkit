@@ -44,7 +44,7 @@ The following steps have been tested on macOS Catalina 10.15.7 only
 11. Use the download-certificate.sh script to download the pdf file from the bucket. The s3 key required can be found under https://app.localstack.cloud/resources/s3 in the `cvs-cert-localstack/localstack` bucket folder
 
 ## Dashboard
-It is possible to
+It is possible to navigate localstack portal by browsing the following url. You will need a subscription to be able to do so https://app.localstack.cloud/dashboard
 
 
 ## License
