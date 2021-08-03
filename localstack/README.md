@@ -22,7 +22,12 @@ The following steps have been tested on macOS Catalina 10.15.7 only
 1. Open a new terminal window and navigate into the `scripts` directory
 2. Export the localstack PRO api key by running `export LOCALSTACK_API_KEY=xxxxxxxxx`
 3. Run the following command `docker-compose up` and wait until the container is up and running
+
+<a href="https://asciinema.org/a/BiiNAnwOzmVtX2JN8N8hi3f2Z?t=2" target="_blank"><img src="https://asciinema.org/a/BiiNAnwOzmVtX2JN8N8hi3f2Z.svg" width="750" /></a>
+
 4. In a different terminal navigate into the scrip folder and run the `./prepare_localstack.sh` script
+
+<a href="https://asciinema.org/a/UvjpRkP25hk5skGWdg4dCxRFj?t=2" target="_blank"><img src="https://asciinema.org/a/UvjpRkP25hk5skGWdg4dCxRFj.svg" width="750"/></a>
 
 #### Create Localstack virtual environment for the geeks
 0. The recommendation is to close as many applications as possible as this process requires quite a bit of computational power
@@ -39,7 +44,7 @@ The following steps have been tested on macOS Catalina 10.15.7 only
 11. Use the download-certificate.sh script to download the pdf file from the bucket. The s3 key required can be found under https://app.localstack.cloud/resources/s3 in the `cvs-cert-localstack/localstack` bucket folder
 
 ## Dashboard
-It is possible to 
+It is possible to
 
 
 ## License
