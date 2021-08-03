@@ -40,4 +40,5 @@ idea/*
 
 localstack/scripts/seed/node_modules/*
 localstack/scripts/certificates/*
+localstack/scripts/reference-data/*
 localstack/reference-data/*
