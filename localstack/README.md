@@ -17,10 +17,17 @@ The following steps have been tested on macOS Catalina 10.15.7 only
 6. Open docker preferences and under resources, file sharing make sure you have `/private` in the resources list.
 7. This version of localstack requires an API key. You will need to create a subscription on https://app.localstack.cloud/  to be able to test use these script. The subscription needs to be exported prior to running the docker-compose up script. `export LOCAL_API_KEY=xxxxxxxxx`
 
-#### Create Localstack virtual environment
+#### Create Localstack virtual environment for the impatient
 0. The recommendation is to close as many applications as possible as this process requires quite a bit of computational power
 1. Open a new terminal window and navigate into the `scripts` directory
-2. Export the localstack PRO api key by running `export LOCAL_API_KEY=xxxxxxxxx`
+2. Export the localstack PRO api key by running `export LOCALSTACK_API_KEY=xxxxxxxxx`
+3. Run the following command `docker-compose up` and wait until the container is up and running
+4. In a different terminal navigate into the scrip folder and run the `./prepare_localstack.sh` script
+
+#### Create Localstack virtual environment for the geeks
+0. The recommendation is to close as many applications as possible as this process requires quite a bit of computational power
+1. Open a new terminal window and navigate into the `scripts` directory
+2. Export the localstack PRO api key by running `export LOCALSTACK_API_KEY=xxxxxxxxx`
 3. Run the following command `docker-compose up` and wait until the container is up and running
 4. Upload the latest zip files into localstack by running `./upload_all.sh -b` in the same directory. Wait until this process finish
 5. Now change directory and go to the terraform folder and run `terraform init`
@@ -30,6 +37,10 @@ The following steps have been tested on macOS Catalina 10.15.7 only
 9. You can now import the postman collection from the postman folder which will provide all necessary scripts required to run the services.
 10. Using the test results payloads you can generate a certificate. The certificate will be generated in the cvs-cert-localstack bucket
 11. Use the download-certificate.sh script to download the pdf file from the bucket. The s3 key required can be found under https://app.localstack.cloud/resources/s3 in the `cvs-cert-localstack/localstack` bucket folder
+
+## Dashboard
+It is possible to 
+
 
 ## License
 This tool kit is available as open source under the terms of the [MIT](https://opensource.org/licenses/MIT).

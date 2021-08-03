@@ -5,20 +5,17 @@ services:
     container_name: "${LOCALSTACK_DOCKER_NAME-localstack}"
     image: localstack/localstack:latest
     network_mode: bridge
-    user: root
     ports:
       - "127.0.0.1:53:53"
       - "127.0.0.1:53:53/udp"
       - "127.0.0.1:443:443"
       - "127.0.0.1:4566:4566"
       - "127.0.0.1:4571:4571"
-      - "127.0.0.1:${PORT_WEB_UI-9000}:${PORT_WEB_UI-9000}"
     environment:
       - SERVICES=iam, lambda, dynamodb, dynamodbstreams, apigateway, s3, s3api, sns, sqs, sts, cloudwatch, cloudwatchlogs, xray
       - DEBUG=1
       - DEFAULT_REGION=eu-west-1
-      - PORT_WEB_UI=9000
-      - LOCALSTACK_API_KEY=${LOCAL_API_KEY}
+      - LOCALSTACK_API_KEY=${LOCALSTACK_API_KEY}
       - LAMBDA_EXECUTOR=docker-reuse
       - LAMBDA_REMOTE_DOCKER=false
       - DATA_DIR=/private/tmp/localstack/data
