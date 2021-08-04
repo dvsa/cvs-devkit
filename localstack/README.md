@@ -18,7 +18,7 @@ The following steps have been tested on macOS Catalina 10.15.7 only
 4. Make sure you have the awscli v2 installed [Download the latest version here](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html)
 5. Make sure you have awslogs installed [Download the latest version here](https://github.com/jorgebastida/awslogs)
 6. Open docker preferences and under resources, file sharing make sure you have `/private` in the resources list.
-7. This version of localstack requires an API key. You will need to create a subscription on https://app.localstack.cloud/  to be able to test use these script. The subscription needs to be exported prior to running the docker-compose up script. `export LOCAL_API_KEY=xxxxxxxxx`
+7. This version of localstack requires an API key. You will need to create a subscription on https://app.localstack.cloud/  to be able to test use these script. The subscription needs to be exported prior to running the docker-compose up script. `export LOCALSTACK_API_KEY=xxxxxxxxx`
 
 #### Create Localstack virtual environment for the impatient
 0. The recommendation is to close as many applications as possible as this process requires quite a bit of computational power
