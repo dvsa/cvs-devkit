@@ -9,7 +9,7 @@ The following steps have been tested on macOS Catalina 10.15.7 only
 * 6 CPUs
 
 ### Architecture
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/dvsa/cvs-devkit/blob/feature/CVSB-19359/localstack/architecture/localstack.png?raw=true)
 
 #### Prerequisites
 1. Make sure the latest docker engine is installed and up to date. [Download the latest version here](https://www.docker.com/products/docker-desktop)
